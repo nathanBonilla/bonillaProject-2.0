@@ -1,0 +1,44 @@
+.projects__parallax {
+
+    h1 {
+        font-size: 16rem;
+        color: var(--gray-color);
+        justify-content: left;
+    }
+
+    .projects__card {
+        flex-direction: column;
+        padding: 2rem;
+        margin: 3rem 3rem 3rem 10rem;
+        height: 400px;
+        width: 400px;
+        border-radius: 15px;
+        background: var(--gray-color);
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            color: var(--secondary-color)
+        }
+
+        p {
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            color: var(--white-color);
+            background: var(--gray-color);
+            border: none;
+
+            padding: 1rem 3rem;
+            margin-top: 1rem;
+            font-family: var(--font-base);
+        }
+    }
+}
