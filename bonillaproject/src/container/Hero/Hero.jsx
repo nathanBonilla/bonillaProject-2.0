@@ -51,4 +51,4 @@ const Hero = () => {
 }
 
 
-export default AppWrap(Hero, 'home')
+export default Hero;

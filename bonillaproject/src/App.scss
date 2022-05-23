@@ -35,6 +35,15 @@
         padding: 4rem 1rem 2rem;
     }
 }
+
+.background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/background.jpg');
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
   
 .copyright {
     width: 100%;

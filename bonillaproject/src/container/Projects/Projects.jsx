@@ -14,7 +14,7 @@ const projects = [
 
 const Projects = () => {
   	return (
-		<div className="projects__parallax">
+		<div className="app__projects">
 			
 			{projects.map((project, index) => (
 				<div className="projects__card">
