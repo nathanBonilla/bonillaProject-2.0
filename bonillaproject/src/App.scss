@@ -1,5 +1,5 @@
 .app {
-    background-color: var(--black-color);
+    // background-color: var(--black-color);
     font-family: var(--font-base);
 }
   
@@ -36,14 +36,14 @@
     }
 }
 
-.background {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/background.jpg');
-    background-size: contain;
-    background-position: top center;
-    background-repeat: no-repeat;
-    height: 100%;
+// .background {
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/background.jpg');
+//     background-size: cover;
+//     background-position: top center;
+//     background-repeat: no-repeat;
+//     height: 100%;
 
-}
+// }
   
 .copyright {
     width: 100%;
@@ -85,7 +85,7 @@
     font-weight: 400;
     text-align: center;
     color: var(--white-color);
-    text-transform: capitalize;
+    // text-transform: capitalize;
   
     span {
         color: var(--secondary-color);

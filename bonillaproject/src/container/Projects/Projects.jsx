@@ -15,7 +15,11 @@ const projects = [
 const Projects = () => {
   	return (
 		<div className="app__projects">
-			
+					<ParallaxProvider>
+						<Parallax translateY={['-10vh', '50vh']}>
+							<h1>Projects</h1>
+						</Parallax>
+					</ParallaxProvider>
 			{projects.map((project, index) => (
 				<div className="projects__card">
 					<h2 className="bold-text" style={{ marginTop: 20}}>
@@ -28,11 +32,6 @@ const Projects = () => {
 					<button>Live Code</button> */}
 				</div>
 			))}
-			<ParallaxProvider>
-				<Parallax translateY={['-210vh', '-10vh']}>
-					<h1>Projects</h1>
-				</Parallax>
-			</ParallaxProvider>
 		</div>  
   	)
 }

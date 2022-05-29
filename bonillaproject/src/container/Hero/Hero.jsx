@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { AppWrap } from '../../wrapper';

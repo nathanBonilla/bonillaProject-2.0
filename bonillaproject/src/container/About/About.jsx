@@ -18,7 +18,11 @@ const About = () => {
 			{/* <h2 className="head-text">
 				What's the <span>Big</span> Deal?
 			</h2> */}
-
+			<ParallaxProvider>
+				<Parallax translateY={['-10vh', '50vh']}>
+					<h1>About</h1>
+				</Parallax>
+			</ParallaxProvider>
 			<div className="about__card-holder">
 				{abouts.map((about, index) => (
 					<div className="about__card">
@@ -32,11 +36,6 @@ const About = () => {
 					</div>
 				))}
 			</div>
-			<ParallaxProvider>
-				<Parallax translateY={['-150vh', '-10vh']}>
-					<h1>About</h1>
-				</Parallax>
-			</ParallaxProvider>
     	</div>
   	)
 }
