@@ -1,20 +1,18 @@
 import React from 'react'
-import { motion } from 'framer-motion';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 
-import { AppWrap } from '../../wrapper';
 import './Projects.scss'
 
 const projects = [
-	{ title: 'Project 1', description: 'Description' },
-	{ title: 'Project 2', description: 'Description' },
-	{ title: 'Project 3', description: 'Description' },
-	{ title: 'Project 4', description: 'Description' }
+	{ title: 'Project 1', description: 'Description', githubLink: '', liveCodeLink: '' },
+	{ title: 'Project 2', description: 'Description', githubLink: '', liveCodeLink: '' },
+	{ title: 'Project 3', description: 'Description', githubLink: '', liveCodeLink: '' },
+	{ title: 'Project 4', description: 'Description', githubLink: '', liveCodeLink: '' }
 ]
 
 const Projects = () => {
   	return (
-		<div className="app__projects">
+		<div id="projects" className="app__projects">
 					<ParallaxProvider>
 						<Parallax translateY={['-10vh', '50vh']}>
 							<h1>Projects</h1>
@@ -28,8 +26,8 @@ const Projects = () => {
 					<p className="p-text" style={{ marginTop: 10}}>
 						{project.description}
 					</p>
-					{/* <button>GitHub</button>
-					<button>Live Code</button> */}
+					<a href={project.githubLink}><button>GitHub</button></a>
+					<a href={project.liveCodeLink}><button>Live Code</button></a>
 				</div>
 			))}
 		</div>  

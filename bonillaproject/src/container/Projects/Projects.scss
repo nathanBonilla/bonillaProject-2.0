@@ -9,13 +9,25 @@
     }
 
     .projects__card {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        position: relative;
+
         padding: 2rem;
         margin: 3rem 3rem 3rem 10rem;
         height: 400px;
         width: 400px;
+
         border-radius: 15px;
         background: var(--gray-color);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            backdrop-filter: blur(4px);
+            transform: scale(1.1);
+        }
+
 
         h2 {
             font-size: 2rem;
@@ -24,23 +36,31 @@
         }
 
         p {
-            font-size: 1rem;
+            font-size: 1.25rem;
             text-align: center;
         }
 
+        a {
+            text-decoration: none;
+        }
+
         button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+            position: relative;
+            justify-self: end;
 
             color: var(--white-color);
             background: var(--gray-color);
             border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
 
             padding: 1rem 3rem;
             margin-top: 1rem;
             font-family: var(--font-base);
+            font-size: 1rem;
+
+            &:hover {
+            }
         }
     }
 }

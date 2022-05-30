@@ -8,7 +8,7 @@ const Background = () => {
   return (
     <div className="background">
     <ParallaxProvider>
-      <Parallax translateY={['0vh', '-50vh']}>
+      <Parallax translateY={['0vh', '0vh']}>
       <img src={images.background} alt="background" />
       </Parallax>
     </ParallaxProvider>

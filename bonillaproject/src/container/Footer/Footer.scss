@@ -8,6 +8,11 @@
     padding: 15rem;
     padding-top: 19rem;
 
+    h1 {
+        font-size: 13rem;
+        color: var(--gray-color);
+    }
+
     // Large Screens
     @media screen and (min-width: 2000px) {
         // padding-top: 8rem;
@@ -38,13 +43,5 @@
         height: 3rem;
         width: 3rem;
         margin: 1rem 2rem;
-    }
-
-    .copyright{
-        color: #ffffff;
-        font-size: 1.25rem;
-
-        position: absolute;
-        bottom: 0;
     }
 }

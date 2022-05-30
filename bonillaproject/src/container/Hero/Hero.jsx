@@ -1,11 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-import { AppWrap } from '../../wrapper';
-import { images } from '../../constants';
 import './Hero.scss';
+import { resume } from '../../constants';
 
 const Hero = () => {
     return (
@@ -36,7 +34,7 @@ const Hero = () => {
 			transition={{ delay: .35, duration: 0.5 }}
 			className="app__hero-resume"
 			>
-				<button>My Resume</button>
+				<a href={ resume } target="_blank"><button>My Resume</button></a>
 			</motion.div>
 
 			<motion.div
@@ -44,8 +42,12 @@ const Hero = () => {
 			transition={{ delay: .5, duration: 0.5 }}
 			className="app__hero-links"
 			>
-				<FaGithub />
-				<FaLinkedin />
+				<a href="https://github.com/nathanBonilla" target="_blank">
+					<FaGithub />
+				</a>
+				<a href="https://www.linkedin.com/in/nathan-bonilla/" target="_blank">
+					<FaLinkedin />
+				</a>
 			</motion.div>
       	</div>
     )
